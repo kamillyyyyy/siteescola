@@ -1,0 +1,23 @@
+body {
+    background-color: #fffbfb;  
+    font-family: Arial, sans-serif; 
+}
+h1 {
+    text-align: center;
+    color: #08f30f; 
+}
+
+h2 {
+    text-align: center; 
+    color: #0efd16; 
+}
+p {
+    text-align: justify;
+    text-justify: inter-word; 
+    max-width: 800px; 
+    margin: 20px auto; 
+}
+img {
+        display: block; 
+        margin: 0 auto; 
+}
