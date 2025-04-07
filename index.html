@@ -1,28 +1,135 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Os lugares mais lindos do Brasil</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>Curitiba</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <h1><strong>Os lugares mais lindos do Brasil</strong></h1>
-    <h2><strong>Cristo Redentor</strong></h2>
-    <P> O Cristo Redentor é uma estátua de Jesus Cristo localizada no Morro do Corcovado, no Rio de Janeiro.
-    É um dos símbolos mais reconhecidos do Brasil e uma das Sete Maravilhas do Mundo Moderno.</P>
-    <img src="cristoredentor.jpg" alt="Imagem do Cristo Redentor" width="160">
+    <header class="p-5">
+        <nav class="container d-flex justify-content-between align-items-center">
+          <img src="bandeiradobrasil.jpg" class="nav-img" style="height: 50px;" loading="lazy" alt="Bandeira do Brasil">
+            <ul class="nav mt-5">
+                <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+                <li class="nav-item"><a class="nav-link" href="#lugares">Lugares</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+            </ul>
+            <div id="acessibilidade" class="menu-acessibilidade">
+                <button id="botao-acessibilidade" class="btn btn-primary fw-bold rotacao-botao" aria-expanded="false">acessibilidade</button>
+                <div id="opcoes-acessibilidade" class="opcoes-acessibilidade apresenta-lista">
+                    <button id="aumentar-fonte" class="btn btn-primary fw-bold" aria-label="Aumentar o tamanho da fonte">A+</button>
+                    <button id="diminuir-fonte" class="btn btn-primary fw-bold" aria-label="Diminuir o tamanho da fonte">A-</button>
+                    <button id="alterna-contraste" class="btn btn-primary fw-bold" aria-label="Alterna o contraste de cores"> <i class="bi bi-shadows"></i></button>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-    <h2><strong>Cataratas do Iguaçu</strong></h2>
-    <p>  As Cataratas do Iguaçu são um conjunto de 275 quedas d'águaque se encontram na fronteira entre
-     o Brasil e a Argentina.
-     São um dos principais destinos turísticos do Brasil e uma das Sete Novas Maravilhas da Natureza.</p>
-     <img src="cataratasdoiguacu.jpg" alt="Imagem das Cataratas do Iguaçú" width="250">
+    <main class="container my-5">
+      <section id="inicio" class="my-5">
+        <div class="inicio-fundo d-flex justify-content-between align-items-center flex-wrap">
+          <div class="col-md-6 text-center">
+            <img src="Curitiba.png" alt="Banner Curitiba" title="Curitiba banner" class="img-fluid mb-3" width="660" height="290" loading="lazy">
+          </div>
+          <div class="col-md-6 text-end">
+            <h1 class="display-4 text-dark fst-italic fw-bold">Bem vindo!</h1>
+            <p class="text-dark fs-5 mb-3">Aqui você irá conhecer alguns lugares incríveis de Curitiba!</p>
+            <a href="#curitiba" class="btn btn-primary btn-lg fw-semibold">Quero conhecer!</a>
+          </div>
+    
+        </div>
+      </section>
+    </main>
+    
+    
 
-     <h2><strong>Lençóis Maranhenses</strong></h2>
-     <p> O Parque Nacional dos Lençóis Maranhenses é uma área protegida na costa atlântica norte do Brasil.
-     É conhecido pela sua vasta paisagem desértica de grandes dunas de areia branca e pelas lagoas sazonais
-     de água da chuva.</p>
-     <img src="lencoismaranhenses.jpg" alt="Imagem dos Lençóis Maranhenses" width="250">
+        <section id="curitiba" class="my-5 pt-6 secao-curitiba" aria-label="Seção explicativa sobre Curitiba">
+            <div class="container d-flex align-items-center">
+                <div class="col-4 d-flex justify-content-center">
+                    <img src="Bandeira_de_curitiba.png" class="rounded-4" width="290" height="295" loading="lazy">
+                </div>
+                <div class="col-5">
+                    <h2>O que é Curitiba?</h2>
+                    <p class="p-2">
+                      Curitiba é uma cidade brasileira situada no estado do Paraná, na região Sul do Brasil.
+                     Abriga a sede do governo estadual, desempenhando, dessa forma, a função de capital.
+                     Trata-se da cidade paranaense mais populosa, com pouco mais de 1,77 milhão de habitantes.
+                     Representa também a sexta maior economia municipal do Brasil, o que a torna o principal centro
+                     econômico do Paraná e um dos mais importantes do sul do país.
+                     <p>Fonte: Brasil Escola</p>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="lugares" aria-label="Seção de lugares e pontos turísticos de Curitiba">
+            <h2 class="text-center pt-5">Lugares</h2>
+            <div class="container p-3 mt-3 fundo-galeria">
+
+                <div class="row justify-content-md-center">
+                    <div class="col-md-4">
+                        <img src="jardimbotanico.jpg" class="img-fluid rounded-5" loading="lazy">
+                        <p>O Jardim Botânico de Curitiba, ou Jardim Botânico Francisca Rischbieter, é um dos principais pontos turísticos da cidade de Curitiba. Localiza-se no bairro Jardim Botânico. Em 2007 foi o monumento mais votado numa eleição para escolha das Sete Maravilhas do Brasil, promovido pelo site Mapa-Mundi. Fonte: Wikipédia</p>
+                    </div>
+                    <div class="col-md-4">
+                      <img src="Parque_Tangua.jpg" class="img-fluid rounded-5" loading="lazy">
+                      <p>O Parque Tanguá é um dos principais parques da cidade de Curitiba, localiza-se na região norte da cidade, nos bairros Pilarzinho e Taboão. Possui dois lagos e um túnel artificial. É dotado ainda de ancoradouro, ciclovia, pista de corrida, lanchonete e dois estacionamentos para carros (na área inferior e superior). Fonte: Wikipédia</p>
+                    </div>
+                </div>
+                <div class="row mt-4 justify-content-md-center">
+                    <div class="col-md-4">
+                       <img src="operadearame.jpg" class="img-fluid rounded-5" loading="lazy">
+                       <p>Ópera de Arame é um teatro brasileiro, localizado na cidade de Curitiba. Seu nome deriva do estilo construtivo, feito de tubos de aço e estruturas metálicas, coberto com placas transparentes de policarbonato, lembrando a fragilidade de uma construção em arame. Fonte: Wikipédia</p>
+                </div>
+                    <div class="col-md-4">
+                       <img src="museudoolho.jpg" class="img-fluid rounded-5" loading="lazy">
+                       <p>O Museu Oscar Niemeyer (MON), também conhecido como Museu do Olho, é um museu de arte localizado na cidade de Curitiba. A instituição tem como foco as artes visuais, a arquitetura e o design. Fonte: Wikipédia</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato">
+            <div class="container p-5 d-flex justify-content-center">
+                <div class="col-md-8 col-lg-10 rounded-5 formulario">
+                    <h2 class="mb-3">Entre em contato</h2>
+                    <form>
+                        <div class="form-group mb-3">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" name="nome" class="form-control rounded-3 mt-1" placeholder="Digite seu nome completo">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" class="form-control rounded-3 mt-1" placeholder="Digite seu email">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea id="mensagem" name="mensagem" class="form-control rounded-4 mt-2" rows="4" placeholder="Escreva sua mensagem"></textarea>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-primary btn-lg rounded-pill">Enviar mensagem</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-center p-3 fst-italic">
+        <p>Acesse nossas redes:</p>
+        <i class="bi bi-whatsapp"></i>
+        <i class="bi bi-instagram"></i>
+        <i class="bi bi-tiktok"></i>
+        <p class="mt-3">Projeto fictício sem fins comerciais.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
